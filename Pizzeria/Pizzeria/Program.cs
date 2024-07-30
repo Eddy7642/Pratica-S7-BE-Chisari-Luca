@@ -6,7 +6,6 @@ using Pizzeria.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Aggiungi servizi al contenitore.
 builder.Services.AddControllersWithViews();
 
 // Configura il contesto del database
@@ -20,10 +19,10 @@ builder.Services.AddIdentity<Utente, IdentityRole>()
 
 var app = builder.Build();
 
-// Configura la pipeline HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
