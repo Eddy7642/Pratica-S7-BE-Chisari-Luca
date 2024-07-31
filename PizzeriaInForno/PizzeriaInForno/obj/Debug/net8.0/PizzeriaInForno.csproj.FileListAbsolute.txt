@@ -1,0 +1,9 @@
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.AssemblyInfoInputs.cache
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.AssemblyInfo.cs
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.csproj.CoreCompileInputs.cache
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.RazorAssemblyInfo.cache
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.RazorAssemblyInfo.cs
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.sourcelink.json
+C:\Users\lucac\OneDrive\Desktop\Prova Pratica S7 BE Luca Chisari\PizzeriaInForno\PizzeriaInForno\obj\Debug\net8.0\PizzeriaInForno.csproj.AssemblyReference.cache
