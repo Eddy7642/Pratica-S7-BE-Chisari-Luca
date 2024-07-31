@@ -1,19 +1,34 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Pizzeria.Models;
 
 namespace Pizzeria.Data
-
 {
-    public class PizzeriaContext : DbContext
+    public class PizzeriaContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<Articolo> Articoli { get; set; }
-        public DbSet<Utente> Utenti { get; set; }
-        public DbSet<Ordine> Ordini { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public PizzeriaContext(DbContextOptions<PizzeriaContext> options)
+            : base(options)
         {
-            optionsBuilder.UseSqlServer("YourConnectionStringHere");
+        }
+
+        public DbSet<OrdineArticolo> OrdineArticolo { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<OrdineArticolo>()
+                .HasKey(oa => new { oa.OrdineId, oa.ArticoloId });
+
+            modelBuilder.Entity<OrdineArticolo>()
+                .HasOne(oa => oa.Ordine)
+                .WithMany(o => o.Articoli)
+                .HasForeignKey(oa => oa.OrdineId);
+
+            modelBuilder.Entity<OrdineArticolo>()
+                .HasOne(oa => oa.Articolo)
+                .WithMany(a => a.Ordini)
+                .HasForeignKey(oa => oa.ArticoloId);
         }
     }
 }
-    
